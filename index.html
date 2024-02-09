@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer 2.0</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./js/main.js" defer type="module"></script>
+</head>
+<body>
+  <div class="container">
+    <main id="app" class="flex">
+      <section id="timer">
+        <div id="time" class="flex">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+  
+        <div id="controls" class="flex">
+          <button 
+            id="playBtn" 
+            class="ph ph-play-circle"
+            data-action="toggleRunning"></button>
+          <button 
+            id="pauseBtn" 
+            class="ph ph-pause-circle"
+            data-action="toggleRunning"></button>
+          <button 
+            id="resetBtn" 
+            class="ph ph-stop-circle"
+            data-action="reset"></button>
+          <button 
+            id="plusBtn" 
+            class="ph ph-plus-circle"
+            data-action="plusFive"></button>
+          <button 
+            id="minusBtn" 
+            class="ph ph-minus-circle"
+            data-action="minusFive"></button>
+        </div>
+      </section>
+  
+      <section id="sounds">
+        <button 
+          class="ph ph-tree-evergreen" id="forest-sound" data-play="playForestSound"></button>
+        <button 
+          class="ph ph-cloud-rain" 
+          id="rain-sound"
+          data-play="playRainSound" ></button>
+        <button 
+          class="ph ph-storefront" 
+          id="coffee-shop-sound"
+          data-play="playCoffeeShopSound"></button>
+        <button 
+          class="ph ph-flame" 
+          id="bonfire-sound"
+          data-play="playBonfireSound"></button>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
